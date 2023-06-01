@@ -183,7 +183,7 @@ server {
  <summary>Install</summary>
 
 ```shell
-docker-compose run composer create-project
+./app install
 ```
 
 </details>
@@ -192,7 +192,7 @@ docker-compose run composer create-project
  <summary>Run</summary>
 
 ```shell
-docker-compose up
+./app start
 ```
 
 Docker Compose will now start all the services for you:
@@ -228,13 +228,13 @@ MailHog comes installed as a service in docker-compose.
 ### Update WordPress Core and Composer packages (plugins/themes)
 
 ```shell
-docker-compose run composer update
+./app composer update
 ```
 
 #### Use WP-CLI
 
 ```shell
-docker exec -it myapp-wordpress bash
+./app cli
 ```
 
 Login to the container
